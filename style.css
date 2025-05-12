@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Pokemon pixels 1";
+    src: 
+        local("Pokemon pixels 1")
+        url("POKIPIX1.TTF")
+        format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Whirly Birdie";
+    src: 
+        local("Whirly Birdie")
+        format("truetype");
+  }
+  
+  body {
+    margin: 50px;
+    font-family: "Whirly Birdie";
+    background-color: var(--offwhite)
+  }
+  
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --red: #fc4347;
+    --blue: #7ca0c9;
+    --sun: #fec031;
+    --forest: #464D33;
+    --green: #70936f;
+    --lightgreen: #CCD9D1;
+    --wood: #AD6C2F;
+    --navy: #1D3767;
+    --offwhite: #fff4e7;
+    
+    --radius: 45px;
+  }
+  
+  
+  
+  .section {
+  margin: auto;
+  text-align: center;
+  width: 850px;
+  background-color: var(--lightgreen);
+  color: black;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: var(--radius);
+  }
+  
+  .section h2 {
+  margin: 0;
+  font-variation-settings: "wght" 70, "wdth" 120, "ital" 0;
+  margin-bottom: 50px;
+  font-size: 15px;
+  }
+  
+  .shelf {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: auto;
+    width: 700px;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: 10px solid var(--wood);
+    cursor: pointer;
+  }
+  
+  .shelf:active {
+  transform: translateY(1px);
+  }
+  
+  .book {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding-top: 25px;
+    box-sizing: border-box;
+    transition: .2s;
+    transition-property: transform;
+  }
+  
+  .hide {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  
+  .rotatedbook {
+    transform: rotate(-10deg);
+    margin-left: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .whirlybatbook {
+    font-family: "Pokemon pixels 1";
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .booktitle {
+    font-family: "Whirly Birdie";
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-variation-settings: "wght" 50, "wdth" 60.06, "ital" 0;
+    font-size: 40px;
+  }
+  
+  .smalltitle {
+      font-size: 25px!important;
+      font-variation-settings: "wght" 55, "wdth" 50, "ital" 0;
+      writing-mode: horizontal-tb;
+      margin-left: 0;
+      margin-top: -5px;
+  }
