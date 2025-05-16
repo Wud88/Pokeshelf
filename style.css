@@ -1,17 +1,15 @@
 @font-face {
-    font-family: "Pokemon pixels 1";
-    src: 
-        local("Pokemon pixels 1")
-        url("POKIPIX1.TTF")
-        format("truetype");
-  }
+  font-family: "Pokemon pixels 1";
+  src: 
+      local("Pokemon pixels 1"),
+      url("POKIPIX1.TTF") format("truetype");  
+}
   
   @font-face {
     font-family: "Whirly Birdie";
-    src: 
-        local("Whirly Birdie")
-        format("truetype");
-  }
+    src: url("whirlybirdie.ttf") format("truetype");
+}
+
   
   body {
     margin: 50px;
